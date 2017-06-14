@@ -1,0 +1,8 @@
+/* === General Styles === */
+body { 
+	background: $white;
+	font-family: $font-main;
+	font-style: normal;
+	@include sexy-text;
+	overflow: scroll;
+}

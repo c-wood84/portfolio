@@ -1,0 +1,25 @@
+@mixin sexy-text {
+	-webkit-font-smoothing:antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+@mixin circle {	
+	border-radius: 100%;
+	-webkit-border-radius:100%;
+	-moz-border-radius:100%;
+	text-align: center;
+}
+
+@mixin top-shadow {
+
+}
+
+@mixin bottom-shadow {
+
+}
+
+@mixin hover-transition {
+	-webkit-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
