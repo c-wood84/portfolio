@@ -1,0 +1,112 @@
+/* === Global Styles === */
+h1,h2,h3,h4,h5,h6 {
+	@include sexy-text;
+	font-weight: $medium;
+}
+
+h1 {
+	font-size: $text-h1;
+}
+
+h2 { font-size: $text-h2;
+
+}
+
+h3 { font-size: $text-h3;
+
+}
+
+h4 { font-size: $text-h4;
+
+}
+
+p { font-size: $text-p;
+
+}
+
+p.lead {
+	font-weight: $medium;
+}
+
+a {
+	color: $main-portfolio;
+}
+
+a:link, a:visited {
+	color: $main-portfolio;
+}
+
+a:hover {
+	text-decoration: none;
+	color: $portfolio-alt;
+}
+
+button, input, .btn, a.btn {
+	@include sexy-text;
+	color: #fff;
+}
+
+button:focus {
+	outline: none;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+}
+
+.btn {
+	font-weight: $medium;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn-hero {
+
+}
+
+.btn-portfolio {
+	background: $btn-main;
+}
+
+.btn-portfolio:hover {
+	background: $btn-hover;
+}
+
+
+
+img {
+	max-width:100%;
+	height: auto;
+}
+
+
+.border-bottom {
+		border-bottom: 1px solid $border-color;
+	}
+
+.border-right {
+	border-right:1px solid #e8e8e8; 
+}
+
+
+.navbar-collapse {
+	padding: 0;
+	}
+
+.navbar-brand {
+	padding: 0 15px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background: transparent;
+}
+
+.nav > li > a {
+	padding: 10px 15px;
+
+}

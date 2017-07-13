@@ -1,0 +1,208 @@
+@import 'partials/_variables.scss';
+@import 'partials/_mixins.scss';
+@import 'partials/_global.scss';
+@import 'partials/_general.scss';
+@import 'partials/_mobileslider.scss';
+
+/* === Social Header Styles === */
+.social-header {
+	height: 40px;
+	background: $socialHead;
+	.contact-info {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 0;
+		width: 100%;
+		text-align: center;
+		li {
+			display: inline-block;
+			font-size: 1rem;
+			font-weight: 400;
+			border-left:1px solid #e8e8e8; 
+			padding: 3px 6px;
+			line-height: 3.4rem;
+		}
+	}
+
+	.social-info {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 0;
+		li {
+			display: inline-block;
+			font-size: $icon-size;
+			font-weight: 400;
+			border-left:1px solid #e8e8e8; 
+			padding: 3px 10px;
+			line-height: 3.4rem;
+		}
+	}
+}
+
+/* === Nav Menu Styles === */
+.menu-wrapper {
+	height: 96px;
+	padding: 15px 0;
+	background: $white;
+	.navbar-custom {
+		position: relative;
+		border-bottom: 1px solid $border-color;
+		padding: 10px 0;
+		.logo {
+			width: 100%;
+			span {
+				position: relative;
+				top: 12px;
+				right:50px;
+				text-align: left;
+				float: right;
+			}
+		}
+
+		/** hide and show nav for right device **/
+				.desktop {
+					display: none;
+				}
+
+				.mobile { 
+					display: block;
+				}
+	}	
+}
+
+
+/* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+		/* === Social Header Styles === */
+		.social-header {
+			.contact-info {
+				li {
+					font-size: 1.2rem;
+					font-weight: 400;
+					padding: 3px 6px;
+				}
+			}
+
+			.social-info {
+				li {
+					font-size: $icon-size;
+					padding: 3px 10px;
+					line-height: 3.4rem;
+				}
+			}
+		}
+
+
+		/* === Nav Menu Styles === */
+		.menu-wrapper {
+			.navbar-custom {
+				.logo {
+					margin-left: 9%;
+					span {
+						position: relative;
+						right:5px;
+						text-align: left;
+						float: right;
+					}
+				}
+
+						/** hide and show nav for right device **/
+						.desktop {
+							display: block;
+						}
+
+						.mobile { 
+							display: none;
+						}
+			}	
+		}
+
+		#hero {
+			height: 600px;
+			background: url('../img/hero-istock-508417810.jpg') 0 0 no-repeat;
+			background-size: cover;
+		}
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+		/* === Social Header Styles === */
+		.social-header {
+			.contact-info {
+				li {
+					font-size: 1.2rem;
+					font-weight: 400;
+					padding: 3px 6px;
+				}
+			}
+
+			.social-info {
+				li {
+					font-size: 1.4rem;
+					padding: 3px 10px;
+					line-height: 3.4rem;
+				}
+			}
+		}
+
+		/* === Nav Menu Styles === */
+		.menu-wrapper {
+			.navbar-custom {
+				.logo {
+					margin-left: 14%;
+					span {
+						position: relative;
+						right: 80px;
+						text-align: left;
+						float: right;
+					}
+				}
+
+				/** hide and show nav for right device **/
+						.desktop {
+							display: block;
+						}
+
+						.mobile { 
+							display: none;
+						}
+			}	
+		}
+
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+		/* === Nav Menu Styles === */
+		.menu-wrapper {
+			.navbar-custom {
+				.logo {
+					span {
+						position: relative;
+						top: 12px;
+						right: 145px;
+						text-align: left;
+						float: right;
+					}
+				}
+
+				/** hide and show nav for right device **/
+						.desktop {
+							display: block;
+						}
+
+						.mobile { 
+							display: none;
+						}
+			}	
+		}
+
+
+		
+
+		
+
+    }

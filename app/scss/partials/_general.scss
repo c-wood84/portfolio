@@ -4,5 +4,8 @@ body {
 	font-family: $font-main;
 	font-style: normal;
 	@include sexy-text;
+	font-size: 16px; //change to rem
 	overflow: scroll;
+	line-height: 20px;
+	color: $grey;
 }

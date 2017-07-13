@@ -24,44 +24,112 @@
     <![endif]-->
 </head>
 <body>
-<header class="container" role="banner">
-		<div class="row">
-			<div class="col-md-12 border-bottom fixed-height">
-				<div class="row">
-					<div class="col-sm-2 col-md-2" id="top">
-						<a class="logo" href="" title="Wesley Chitwood Front End Developer" itemprop="url">
-							<span itemprop="name">Wesley Chitwood Front End Developer</span>
-						</a><!-- svg logo -->
-					</div><!-- col -->
-
-					<nav id="nav" class="navbar" role="navigation">
-						<!-- Toggle Nav -->
-					    <div class="navbar-header">
-					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					        <span class="sr-only">Toggle navigation</span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					      </button>
-					    </div>
-						
-
-					</nav><!-- navigation -->
-					
-				</div><!-- row -->
-			</div><!-- border bottom fixed height -->
-			
-		</div><!-- outer row -->
-	
-</header>
-
-
-<footer class="container">
-	<div class="row">
-		
+<div id="st-container" class="st-container">
+	<div class="visible-xs">
+		<nav class="st-menu st-effect-1" id="mobilemenu">
+				<h2>Menu</h2>
+					<ul>
+						<li class="active"><a href="/">Home</a></li>
+						<li><a href="#">Skills</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+			</nav>
 	</div>
-</footer>
 
+<div class="st-content"><!-- this is the wrapper for the content -->
+<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+<!-- content push wrapper -->
+			<div class="st-pusher">
+				
+<div class="fixed social-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-7 col-md-6 col-lg-6">
+				<ul class="contact-info">
+					<li><i class="fa fa-home" aria-hidden="true"></i> Kennesaw, GA</li>
+					<li><i class="fa fa-mobile" aria-hidden="true"></i> 803.719.1505</li>
+					<li class="border-right"><i class="fa fa-envelope" aria-hidden="true"></i> wesley.chitwood1@gmail.com</li>
+				</ul>
+								
+			</div>
+
+			<div class="hidden-xs col-sm-5 col-md-6 col-lg-6 ">
+				<ul class="social-info pull-right">
+					<li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href=""><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+					<li class="border-right"><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div><!-- row -->
+	</div><!-- container -->
+</div><!-- fixed social header -->
+
+<div class="menu-wrapper">
+	<nav class="navbar navbar-custom">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-9 pull-left">
+					<div class="logo">
+						<a href="/" title="Wesley Chitwood Front End Developer">
+							<img src="img/logo.svg" width="60" height="60" alt="">
+							<span>Wesley Chitwood<br>Front End Developer</span>
+						</a>
+					</div><!-- logo -->
+				</div><!-- col -->
+
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-3">
+					<div class="menu-responsive desktop">
+						<div class="site-nav pull-right" id="mainNav">	
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="/">Home</a></li>
+								<li><a href="#">Skills</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div><!-- main nav -->
+					</div><!-- menu responsive desktop -->
+					<div class="menu-responsive mobile pull-right">
+						<div id="st-trigger-effects" class="column">
+							<button class="nav-icon" data-effect="st-effect-1" id="open">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+						</div>
+					</div><!-- menu responsive mobile -->
+				</div><!-- col -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</nav><!-- nav custom -->
+</div><!-- menu wrapper -->
+
+<section id="hero">
+	<div class="container">
+
+	</div>
+</section>
+
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<p class="small-text">&copy; Wesley Chitwood.</p>
+			</div>
+			
+		</div>
+	</div><!-- container -->
+</footer><!-- footer -->
+</div>
+</div>
+</div>
+</div><!-- Slider Container -->
 
 
 	<!-- BOOTSTRAP CORE JAVASCRIPT (place at the end of the document so the pages load faster) -->
@@ -71,6 +139,8 @@
 
 	<!-- custom scripts -->
     <script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/classie.js"></script>
+	<script type="text/javascript" src="js/sidebarEffects.js"></script>
 
 	
 </body>

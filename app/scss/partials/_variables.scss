@@ -1,5 +1,14 @@
-//Colors
+//Primary Colors
+$main-portfolio:#37455e;
+$portfolio-alt:#76940a;
+
+//sub primary colors
+
+//Other Colors
 $white: #fff;
+$grey:#525d68;
+$socialHead:#f8f8f8;
+$border-color:#f5f6f7;
 
 //Primary Colors
 
@@ -28,7 +37,7 @@ $soundcloud: #ff3a00;
 //Font Weight
 $light: 300;
 $normal: normal;
-$medium: 400;
+$medium: 500;
 $thick: bold;
 $thicker: 900;
 
@@ -43,11 +52,14 @@ $text-h2:2.5rem;
 $text-h3:2rem;
 $text-h4:1.75rem;
 $text-nav:1.4rem;
-$text-p: 13px;
+$text-p: 1.1rem; 
 $line-height: 1.4em;
-$small-text: 1.2rem;
+$small-text: 1rem;
+$icon-size: 1.6rem;
 
 $main-heading: $text-h1;
 $section-headings: $text-h2;
 
 //Button Variables
+$btn-main: $main-portfolio;
+$btn-hover: $grey;
