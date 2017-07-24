@@ -2,13 +2,27 @@
 $main-portfolio:#37455e;
 $portfolio-alt:#76940a;
 
-//sub primary colors
+//Primary Blue Color Option
+$mainalt-1:#12213A;
+$mainalt-2:#22314c;
+$mainalt-3:#4e5c76;
+$mainalt-4:#6f7b91;
+
+//ALT Green Color Options
+$alt-1:#394900;
+$alt-2:#597100;
+$alt-3:#93B21F;
+$alt-4:#B0CD43;
+
+//Section Colors
+$section-grey: #F5F5F5;
 
 //Other Colors
 $white: #fff;
 $grey:#525d68;
 $socialHead:#f8f8f8;
 $border-color:#f5f6f7;
+$softGrey: #ccc;
 
 //Primary Colors
 
@@ -48,14 +62,17 @@ $heading-weight: $thick;
 
 //Font Sizes
 $text-h1:3rem;
-$text-h2:2.5rem;
+$text-h2:2.2rem;
 $text-h3:2rem;
 $text-h4:1.75rem;
+$text-h5:1.4rem;
+$text-h6:1.2rem;
 $text-nav:1.4rem;
-$text-p: 1.1rem; 
+$text-p: 1.39999rem; 
 $line-height: 1.4em;
-$small-text: 1rem;
+$small-text: 1.1rem;
 $icon-size: 1.6rem;
+$portfolioCaptionHead:1.6rem;
 
 $main-heading: $text-h1;
 $section-headings: $text-h2;

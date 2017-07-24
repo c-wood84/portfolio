@@ -20,6 +20,14 @@ h4 { font-size: $text-h4;
 
 }
 
+h5 {
+	font-size: $text-h5;
+}
+
+h6 {
+	font-size: $text-h6;
+}
+
 p { font-size: $text-p;
 
 }
@@ -55,6 +63,18 @@ button {
 	padding: 0;
 }
 
+.sticky {
+	width: 100%;
+	background: $white;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
 .btn {
 	font-weight: $medium;
 }
@@ -63,7 +83,17 @@ button {
 	outline: none;
 }
 
+.btn:hover {
+	color: $white;
+}
+
+.btn a:hover {
+	color: $white;
+}
+
 .btn-hero {
+	background: $mainalt-3;
+	border: 1px solid $white;
 
 }
 
@@ -73,6 +103,20 @@ button {
 
 .btn-portfolio:hover {
 	background: $btn-hover;
+}
+
+.btn-forhire {
+	border-radius: 0px;
+	background: $portfolio-alt;
+	width: 100%;
+	font-weight: 400;
+	color: $white;
+}
+
+.btn-forhire:hover {
+	background: $btn-main;
+	@include btn-transition;
+
 }
 
 
@@ -109,4 +153,43 @@ img {
 .nav > li > a {
 	padding: 10px 15px;
 
+}
+
+.margin-top {
+	margin-top:15px;
+}
+
+.visible {
+	display: block !important;
+}
+
+
+/********* MODAL **********/
+
+#modal {
+	#modal-header {
+		
+	}
+
+}
+
+.modal-dialog {
+	margin: 0 auto;
+}
+
+.modal-content {
+	border-radius: 0px;
+	max-width: 450px;
+	width: 100%;
+	margin: auto;
+
+	#hireModalLabel {
+			display: block;
+			font-weight: 300;
+			margin-bottom: 5px;
+			font-size: 2.8rem;
+			padding: 0;
+			text-align: center;
+			color: $portfolio-alt;
+		}
 }

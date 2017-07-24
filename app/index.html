@@ -7,12 +7,15 @@
 	<title>Wesley Chitwood Portfolio|Front End Developer</title>
 
 	<!-- Font-Awesome -->
-    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
         
     <!-- Bootstrap Core css -->
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-    <!-- Bootstrap Core css -->
+    <!-- Site css -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
 
@@ -25,15 +28,15 @@
 </head>
 <body>
 <div id="st-container" class="st-container">
-	<div class="visible-xs">
+	<div class="visible">
 		<nav class="st-menu st-effect-1" id="mobilemenu">
 				<h2>Menu</h2>
 					<ul>
-						<li class="active"><a href="/">Home</a></li>
-						<li><a href="#">Skills</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="/">Home<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						<li><a href="#skills">Skills<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						<li><a href="#portfolio">Portfolio<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						<li><a href="#about">About<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						<li><a href="#contact">Contact<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
 					</ul>
 			</nav>
 	</div>
@@ -43,33 +46,33 @@
 <!-- content push wrapper -->
 			<div class="st-pusher">
 				
-<div class="fixed social-header">
+<div class="social-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-7 col-md-6 col-lg-6">
 				<ul class="contact-info">
 					<li><i class="fa fa-home" aria-hidden="true"></i> Kennesaw, GA</li>
 					<li><i class="fa fa-mobile" aria-hidden="true"></i> 803.719.1505</li>
-					<li class="border-right"><i class="fa fa-envelope" aria-hidden="true"></i> wesley.chitwood1@gmail.com</li>
+					<li class="border-right"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:wesleychitwood1@gmail.com">wesley.chitwood1@gmail.com</a></li>
 				</ul>
 								
 			</div>
 
 			<div class="hidden-xs col-sm-5 col-md-6 col-lg-6 ">
 				<ul class="social-info pull-right">
-					<li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-					<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-					<li><a href=""><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-					<li class="border-right"><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.linkedin.com/pub/wesley-chitwood/65/260/82a" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					<!--<li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
+					<li><a href="https://twitter.com/W_Chitwood" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="https://instagram.com/wesley.chitwood/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="https://codepen.io/w-chitwood/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+					<li class="border-right"><a href="https://github.com/c-wood84" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
 		</div><!-- row -->
 	</div><!-- container -->
 </div><!-- fixed social header -->
 
-<div class="menu-wrapper">
+<div id="header" class="menu-wrapper sticky">
 	<nav class="navbar navbar-custom">
 		<div class="container">
 			<div class="row">
@@ -82,19 +85,19 @@
 					</div><!-- logo -->
 				</div><!-- col -->
 
-				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-3">
-					<div class="menu-responsive desktop">
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-3 ">
+					<!--<div class="menu-responsive desktop" style="display:none;">
 						<div class="site-nav pull-right" id="mainNav">	
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="/">Home</a></li>
-								<li><a href="#">Skills</a></li>
-								<li><a href="#">Portfolio</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="/">Home</a></li>
+								<li><a href="#skills">Skills</a></li>
+								<li><a href="#portfolio">Portfolio</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#contact">Contact</a></li>
 							</ul>
-						</div><!-- main nav -->
-					</div><!-- menu responsive desktop -->
-					<div class="menu-responsive mobile pull-right">
+						</div>
+					</div>-->
+					<div class="menu-responsive pull-right">
 						<div id="st-trigger-effects" class="column">
 							<button class="nav-icon" data-effect="st-effect-1" id="open">
 								<span></span>
@@ -111,6 +114,359 @@
 
 <section id="hero">
 	<div class="container">
+		<div class="hero-info">
+			<h1>Hello,</h1>
+			<h1>I'm Wesley,</h1>
+			<h1>Web Developer.</h1>
+			<h6>Front End Developer / WordPress</h6>
+				
+			<div id="hero-button">
+				<a href="#" data-toggle="modal" data-target="#hireModal" class="btn btn-hero hvr-sweep-to-left">HIRE ME</a>
+			</div>
+		</div>
+
+	</div><!-- container -->
+</section><!-- hero -->
+
+<section id="skills">
+	<div class="container">
+
+		<div class="col-xs-12 col-sm-12">
+			<div class="content skills-content">
+				<div class="section-heading">
+					<h2>Skills &amp; Expertise</h2>
+					<div class="line"></div>
+				</div>
+					<p>The majority of my time I get envolved in working with front-end development. I regularly work with bootstrap and other responsive frameworks.
+					 I love building web sites, from scertch and making them something creative either if its a large site, simple landing page or even a small micro site. 
+					</p>
+
+					<p>Lately I have been getting my hands into some single page JS application and even getting a fresh dive into Angular.</p>
+
+					<p>I do love working with WordPress!</p>
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 progress-pod">
+			<div class="col-sm-2 co-md-2 col-lg-2 pp-wrap">
+				<div class="progress html">
+					<span class="progress-left">
+						<span class="progress-bar"></span>
+					</span>
+					<span class="progress-right">
+						<span class="progress-bar"></span>
+					</span>
+					<div class="progress-value">88%</div>
+				</div>
+			<h5>HTML</h5>
+			</div>
+
+			<div class="col-sm-2 co-md-2 col-lg-2 pp-wrap">
+				<div class="progress css">
+					<span class="progress-left">
+						<span class="progress-bar"></span>
+					</span>
+					<span class="progress-right">
+						<span class="progress-bar"></span>
+					</span>
+					<div class="progress-value">91%</div>
+				</div>
+			<h5>SCSS/CSS</h5>
+			</div>
+
+			<div class=" col-sm-2 co-md-2 col-lg-2 pp-wrap">
+				<div class="progress js">
+					<span class="progress-left">
+						<span class="progress-bar"></span>
+					</span>
+					<span class="progress-right">
+						<span class="progress-bar"></span>
+					</span>
+					<div class="progress-value">72%</div>
+				</div>
+			<h5>JS/jQuery</h5>
+			</div>
+
+			<div class="col-sm-2 co-md-2 col-lg-2 pp-wrap">
+				<div class="progress php">
+					<span class="progress-left">
+						<span class="progress-bar"></span>
+					</span>
+					<span class="progress-right">
+						<span class="progress-bar"></span>
+					</span>
+					<div class="progress-value">81%</div>
+				</div>
+			<h5>PHP</h5>
+			</div>
+
+			<div class="col-sm-2 co-md-2 col-lg-2 pp-wrap">
+				<div class="progress wpress">
+					<span class="progress-left">
+						<span class="progress-bar"></span>
+					</span>
+					<span class="progress-right">
+						<span class="progress-bar"></span>
+					</span>
+					<div class="progress-value">86%</div>
+				</div>
+			<h5>WordPress</h5>
+			</div>
+
+		</div>
+
+	</div><!-- container -->
+</section><!-- skills -->
+
+<section id="portfolio">
+	<div class="container">
+		<div class="section-heading">
+			<h2>Portfolio</h2>
+			<div class="line"></div>
+		</div>
+
+		<!-- Studio24 Photography -->
+            <div class="animated zoomInDown col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-lg-4 margin-top">
+                <div class="item">
+                    <!-- <h2>Studio24 Photography</h2>
+                    <span data-text="Studio24 Photography"></span> -->
+                    <div class="thumb">
+                        <img src="img/portfolio/thumb/studio24thumb.jpg" alt="">
+                    </div><!-- thumb image -->
+                    <div class="thumb-overlay">
+                        <div class="caption">
+                            <h2>Studio24 Photography</h2>
+                            <div class="tags ">
+                                    <ul>
+                                    <li>UX Design</li>
+                                    <li>Development</li>
+                                    <li>Bootstrap</li>
+                                    <li>Sass</li>
+                                    <li>HTML5</li>
+                                    <li>jQuery</li>
+                                    <li>WordPress</li>
+                                    </ul>
+                            </div>
+                            <div class="view">
+                                <ul>
+                                    <li><a href="https://github.com/c-wood84/studio24" target="_blank"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="http://studio24.photography/" target="_blank"><i class="fa fa-desktop"></i></a></li>
+                                </ul>
+                            </div> <!-- view -->
+                        </div> <!-- caption -->
+                    </div> <!-- thumb overlay -->
+                </div> <!-- item -->
+            </div> <!-- col -->
+            
+            <!-- Worldpay 90 Day Trial -->
+            <div class="animated zoomInDown col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-lg-4 margin-top">
+                <div class="item">
+                    <!-- <h2>Studio24 Photography</h2>
+                    <span data-text="Studio24 Photography"></span> -->
+                    <div class="thumb">
+                        <img src="img/portfolio/thumb/90daythumb.jpg" alt="">
+                    </div><!-- thumb image -->
+                    <div class="thumb-overlay">
+                        <div class="caption">
+                            <h2>Worldpay 90 Day Trial</h2>
+                            <div class="tags ">
+                                    <ul>
+                                    <li>Development</li>
+                                    <li>Bootstrap</li>
+                                    <li>Sass</li>
+                                    <li>HTML5</li>
+                                    <li>jQuery</li>
+                                    </ul>
+                            </div>
+                            <div class="view">
+                                <ul>
+                                    <li><a href="https://github.com/c-wood84/wp-90day-trial" target="_blank"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="https://www.worldpay.us/90day/" target="_blank"><i class="fa fa-desktop"></i></a></li>
+                            </ul>
+                            </div> <!-- view -->
+                        </div> <!-- caption -->
+                    </div> <!-- thumb overlay -->
+                </div> <!-- item -->
+            </div> <!-- col -->
+
+            <!-- Worldpay Sales Kickoff -->
+            <div class="animated zoomInDown col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-lg-4 margin-top">
+                <div class="item">
+                    <!-- <h2>Studio24 Photography</h2>
+                    <span data-text="Studio24 Photography"></span> -->
+                    <div class="thumb">
+                        <img src="img/portfolio/thumb/skothumb.jpg" alt="">
+                    </div><!-- thumb image -->
+                    <div class="thumb-overlay">
+                        <div class="caption">
+                            <h2>Sales Kick Off Microsite</h2>
+                            <div class="tags ">
+                                    <ul>
+                                    <li>Development</li>
+                                    <li>Bootstrap</li>
+                                    <li>Sass</li>
+                                    <li>HTML5</li>
+                                    <li>jQuery</li>
+                                    </ul>
+                            </div>
+                            <div class="view">
+                                <ul>
+                                    <li><a href="https://github.com/c-wood84/wp-90day-trial" target="_blank"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="https://www.worldpay.us/sko/" target="_blank"><i class="fa fa-desktop"></i></a></li>
+                                </ul>
+                            </div> <!-- view -->
+                        </div> <!-- caption -->
+                    </div> <!-- thumb overlay -->
+                </div> <!-- item -->
+            </div> <!-- col -->
+
+			
+
+            <!-- Worldpay Partners LP  -->
+            <div class="animated zoomInDown col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-lg-4 margin-top">
+                <div class="item">
+                    <!-- <h2>Studio24 Photography</h2>
+                    <span data-text="Studio24 Photography"></span> -->
+                    <div class="thumb">
+                        <img src="img/portfolio/thumb/partnerlpv1.jpg" alt="">
+                    </div><!-- thumb image -->
+                    <div class="thumb-overlay">
+                        <div class="caption">
+                            <h2>Worldpay Partners LP</h2>
+                            <div class="tags ">
+                                    <ul>
+                                    <li>Development</li>
+                                    <li>Bootstrap</li>
+                                    <li>Sass</li>
+                                    <li>HTML5</li>
+                                    <li>Drupal</li>
+                                    <li>jQuery</li>
+                                    </ul>
+                            </div>
+                            <div class="view">
+                                <ul>
+                                    <li><a href="https://github.com/c-wood84/wp-partner-lp-v1" target="_blank"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fa fa-desktop"></i></a></li>
+                                </ul>
+                            </div> <!-- view -->
+                        </div> <!-- caption -->
+                    </div> <!-- thumb overlay -->
+                </div> <!-- item -->
+            </div> <!-- col -->
+
+            <!-- Portfolio  -->
+            <div class="animated zoomInDown col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-lg-4 margin-top">
+                <div class="item">
+                    <!-- <h2>Studio24 Photography</h2>
+                    <span data-text="Studio24 Photography"></span> -->
+                    <div class="thumb">
+                        <img src="img/portfolio/thumb/portfoliothumb.jpg" alt="">
+                    </div><!-- thumb image -->
+                    <div class="thumb-overlay">
+                        <div class="caption">
+                            <h2>Portfolio</h2>
+                            <div class="tags ">
+                                    <ul>
+                                    <li>Development</li>
+                                    <li>Bootstrap</li>
+                                    <li>Sass</li>
+                                    <li>HTML5</li>
+                                    <li>jQuery</li>
+                                    </ul>
+                            </div>
+                            <div class="view">
+                                <ul>
+                                    <li><a href="https://github.com/c-wood84/portfolio-website" target="_blank"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="http://www.wesleychitwood.com" target="_blank"><i class="fa fa-desktop"></i></a></li>
+                                </ul>
+                            </div> <!-- view -->
+                        </div> <!-- caption -->
+                    </div> <!-- thumb overlay -->
+                </div> <!-- item -->
+            </div> <!-- col -->
+
+            <!-- Rinne Allen Photography  -->
+            <div class="animated zoomInDown col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-lg-4 margin-top">
+                <div class="item">
+                    <!-- <h2>Studio24 Photography</h2>
+                    <span data-text="Studio24 Photography"></span> -->
+                    <div class="thumb">
+                        <img src="img/portfolio/thumb/rinneallenthumb.jpg" alt="">
+                    </div><!-- thumb image -->
+                    <div class="thumb-overlay">
+                        <div class="caption">
+                            <h2>Rinne Allen Photography</h2>
+                            <div class="tags ">
+                                    <ul>
+                                    <li>Development</li>
+                                    <li>Bootstrap</li>
+                                    <li>Sass</li>
+                                    <li>HTML5</li>
+                                    <li>jQuery</li>
+                                    <li>Isotope</li>
+                                    </ul>
+                            </div> <!-- tags -->
+                            <div class="view">
+                                <ul>
+                                    <li><a href="https://github.com/c-wood84/RinneAllen/tree/master/app" target="_blank"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="http://www.wesleychitwood.com/RinneAllen/index.html" target="_blank"><i class="fa fa-desktop"></i></a></li>
+                                </ul>
+                            </div><!-- view -->
+                        </div> <!-- caption -->
+                    </div> <!-- thumb overlay -->
+                </div> <!-- item -->
+            </div> <!-- col -->
+
+	</div>
+</section>
+
+<section id="about">
+	<div class="container">
+		<div class="section-heading">
+			<h2>About</h2>
+			<div class="line"></div>
+		</div>
+			<div id="mePhoto"></div>
+			<p>I'm a front-end web developer based in Atlanta, GA. I have passion for constructing modern interactive websites using the latest browser technologies as well as tablets and mobile devices.</p>
+
+            <p>I specialize in HTML5, CSS3, JS &amp; jQuery but can also be found tryng new technologies to fulfill other clients needs using various languages and JS libraries. At the moment I'm fascinated by the nitty-gritty of the most popular and used frameworks for responsive web development <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>, <a href="http://sass-lang.com/" target="_blank">Preprocessors</a> and the <a href="http://gulpjs.com/" target="_blank">Streaming Build System</a>.</p>
+
+            <p>When taking a break from web development you can catch me watching professional wrestling and football, mountain biking, kicking back on my <a href="https://my.playstation.com">PlayStation</a> or enjoying some downtime with my wife and our 3 animals.</p>
+
+	</div>
+</section>
+
+<section id="contact">
+	<div class="container">
+		<div class="section-heading">
+			<h2>Contact</h2>
+			<div class="line"></div>
+		</div>
+
+		<div class="col-xs-12 col-sm-6">
+			<div id="contact-me">
+				<h4>Get In Touch</h4>
+				<p>Vestibulum ac dictum lacus. Donec cursus ex ipsum, vitae congue nibh ultrices id. Quisque porttitor sapien et enim scelerisque, et molestie urna ultrices. Donec volutpat arcu turpis, ac congue ex efficitur eu. Sed pulvinar felis ligula, at tempus ipsum luctus vel. Praesent tempor cursus massa, ut dapibus tellus dictum vel. Ut convallis dignissim semper.</p>
+				<ul>
+					<li><i class="fa fa-home" aria-hidden="true"></i> Location: Kennesaw, GA</li>
+					<li><i class="fa fa-mobile" aria-hidden="true"></i> Phone: 803.719.1505</li>
+					<li><i class="fa fa-envelope" aria-hidden="true"></i> E-mail: wesley.chitwood1@gmail.com</li>
+				</ul>
+
+			</div>
+
+		</div><!-- col -->
+
+		<div class="col-xs-12 col-sm-6">
+			<div id="working-on">
+				<h4>What Im Working On?</h4>
+				<p>Vestibulum ac dictum lacus. Donec cursus ex ipsum, vitae congue nibh ultrices id. Quisque porttitor sapien et enim scelerisque, et molestie urna ultrices. Donec volutpat arcu turpis, ac congue ex efficitur eu. Sed pulvinar felis ligula, at tempus ipsum luctus vel. Praesent tempor cursus massa, ut dapibus tellus dictum vel. Ut convallis dignissim semper.</p>
+				
+			</div>
+
+		</div><!-- col -->
+
+		
 
 	</div>
 </section>
@@ -122,7 +478,6 @@
 			<div class="col-xs-12 col-sm-6">
 				<p class="small-text">&copy; Wesley Chitwood.</p>
 			</div>
-			
 		</div>
 	</div><!-- container -->
 </footer><!-- footer -->
@@ -131,17 +486,60 @@
 </div>
 </div><!-- Slider Container -->
 
+<div class="modal fade animated slideInDown" id="hireModal" tabindex="1" role="dialog" aria-labelledby="hireModal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="hireModalLabel">Hire Me!</h4>
+			</div>
+			<div class="modal-body">
+				<p>Vestibulum ac dictum lacus. Donec cursus ex ipsum, vitae congue nibh ultrices id. Quisque porttitor sapien et enim scelerisque, et molestie urna ultrices. Donec volutpat arcu turpis, ac congue ex efficitur eu. Sed pulvinar felis ligula, at tempus ipsum luctus vel. Praesent tempor cursus massa, ut dapibus tellus dictum vel. Ut convallis dignissim semper.</p>
+					<form id="hiremeForm" action="#" get="post">
+						<div class="form-group">
+							<input type="text" class="form-control" name="fullName" value="" placeholder="Your Name" required>
+						</div>
+
+						<div class="form-group">
+							<input type="text" class="form-control" name="subject" value="For Hire" disabled>
+						</div>
+
+						<div class="form-group">
+							<input type="text" class="form-control" name="company" value="" placeholder="Company Name" required>
+						</div>
+
+						<div class="form-group">
+							<input type="tel" class="form-control" name="phone" value="" placeholder="Phone Number" required>
+						</div>
+
+						<div class="form-group">
+							<input type="email" class="form-control" name="email" value="" placeholder="E-mail Address">
+						</div>
+
+						<div class="form-group">
+							<textarea name="message" class="form-control" id="" cols="30" rows="5" placeholder="Message"></textarea>
+						</div>
+
+						<div class="form-group">
+							<input type="submit" class="btn btn-forhire" value="Send">
+						</div>
+					</form>
+			</div>
+		</div>
+	</div>
+
+</div>
+
 
 	<!-- BOOTSTRAP CORE JAVASCRIPT (place at the end of the document so the pages load faster) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 	<!-- custom scripts -->
-    <script type="text/javascript" src="js/scripts.js"></script>
 	<script type="text/javascript" src="js/classie.js"></script>
 	<script type="text/javascript" src="js/sidebarEffects.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
 
-	
 </body>
 </html>
