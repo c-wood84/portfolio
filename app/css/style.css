@@ -1012,6 +1012,7 @@ section {
   display: inline-block;
   padding: 2px;
   margin: 2px;
+  cursor: hand;
 }
 
 .thumb-overlay .caption .view ul li .fa {
@@ -1033,14 +1034,14 @@ section {
 
 /* === ABOUT STYLES === */
 #about #mePhoto {
-  background: url("../img/Wesleypic.jpg") no-repeat center;
-  background-size: 153px 150px;
+  background: url("../img/Wesleypic.jpg") no-repeat top center;
+  background-size: cover;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   text-align: center;
-  width: 150px;
-  height: 150px;
+  width: 135px;
+  height: 145px;
   margin: 15px auto 10px;
   border: 1px solid #37455e;
 }

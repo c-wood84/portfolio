@@ -276,6 +276,7 @@ section {
           display: inline-block;
           padding: 2px;
           margin: 2px;
+		  cursor: hand;
 
           .fa {
             font-size: 25px;
@@ -302,11 +303,11 @@ opacity: 0.9;
 #about {
 
 	#mePhoto {
-		background: url('../img/Wesleypic.jpg') no-repeat center;
-		background-size: 153px 150px;
+		background: url('../img/Wesleypic.jpg') no-repeat top center;
+		background-size: cover;
 		@include circle;
-		width: 150px;
-		height: 150px;
+		width: 135px;
+		height: 145px;
 		margin: 15px auto 10px;
 		border: 1px solid $main-portfolio;
 
