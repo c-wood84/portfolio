@@ -13,8 +13,7 @@ $(function() {
             company: $("input#company").val(),
             email: $("input#email").val(),
             phone: $("input#phone").val(),
-            message: $("textarea#message").val(),
-
+            message: $("textarea#message").val()
         };
 
         $.ajax({

@@ -40,7 +40,7 @@ if(empty($_POST['email']))
    $to = 'wesley.chitwood1@gmail.com'; 
    // put your email 
    $email_subject = " " . $subject . " info form submitted " ; 
-   $email_body = "You have received a new message"  . $subject . "from wesleychitwood.com." . PHP_EOL . PHP_EOL;                  
+   $email_body = "You have received a new message" . " "  . $subject . " " . "from wesleychitwood.com" . PHP_EOL . PHP_EOL;                  
    $email_body .= "Here are the details:\n \nName:" . $fullname . PHP_EOL . PHP_EOL;                  
    $email_body .= "Company: " . $company . "Job: ". $job . "Phone: " . $phone . "Email: ". $email_address . PHP_EOL;
    $email_body .= "Name:\n \n:" . $message . PHP_EOL . PHP_EOL;

@@ -44,19 +44,19 @@
 
 /* === Nav Menu Styles === */
 .menu-wrapper {
-	height: 100px;
-	padding: 15px 0;
+	height: 115px;
+	padding: 10px 0;
 	background: $white;
 	.navbar-custom {
 		position: relative;
 		border-bottom: 1px solid $border-color;
-		padding: 10px 0;
+		padding: 21px 0;
 		.logo {
 			width: 100%;
 			span {
 				position: relative;
 				top: 12px;
-				right:50px;
+				right:40px;
 				text-align: left;
 				float: right;
 			}
@@ -95,7 +95,8 @@
 		font-size: 40px;
 		font-weight: 500;
 		padding: 0;
-		line-height: 1.5rem;
+		margin: 5px 0;
+		line-height: 3rem;
 	}
 	h6 {
 		color: $border-color;
@@ -131,7 +132,7 @@
 /* === LAYOUT STYLES === */
 
 section {
-	padding: 12px 0;
+	padding: 35px 0 75px;
 }
 
 .section-heading {
@@ -414,6 +415,7 @@ opacity: 0.9;
 		font-weight: 500;
 		padding: 0;
 		line-height: 3.2rem;
+		margin: 15px 0;
 	}
 	h6 {
 		text-align: left;
@@ -560,6 +562,13 @@ opacity: 0.9;
 			}	
 		}
 
+/* === HERO STYLES === */
+#hero {
+	height: 600px;
+	background: url('../img/hero-bgv2.jpg') 0 0 no-repeat;
+	background-size: cover;
+	}
+
 
 /* === PORTFOLIO STYLES === */
 
@@ -650,6 +659,13 @@ opacity: 0.9;
 					}
 			}	
 		}
+
+/* === HERO STYLES === */
+#hero {
+	height: 600px;
+	background: url('../img/hero-bgv2.jpg') 0 0 no-repeat;
+	background-size: cover;
+	}
 
 /* === PORTFOLIO STYLES === */
 

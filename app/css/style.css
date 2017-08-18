@@ -768,15 +768,15 @@ body {
 
 /* === Nav Menu Styles === */
 .menu-wrapper {
-  height: 100px;
-  padding: 15px 0;
+  height: 115px;
+  padding: 10px 0;
   background: #fff;
 }
 
 .menu-wrapper .navbar-custom {
   position: relative;
   border-bottom: 1px solid #f5f6f7;
-  padding: 10px 0;
+  padding: 21px 0;
   /** hide and show nav for right device **/
 }
 
@@ -787,7 +787,7 @@ body {
 .menu-wrapper .navbar-custom .logo span {
   position: relative;
   top: 12px;
-  right: 50px;
+  right: 40px;
   text-align: left;
   float: right;
 }
@@ -822,7 +822,8 @@ body {
   font-size: 40px;
   font-weight: 500;
   padding: 0;
-  line-height: 1.5rem;
+  margin: 5px 0;
+  line-height: 3rem;
 }
 
 .hero-info h6 {
@@ -856,7 +857,7 @@ body {
 
 /* === LAYOUT STYLES === */
 section {
-  padding: 12px 0;
+  padding: 35px 0 75px;
 }
 
 .section-heading {
@@ -1120,6 +1121,7 @@ section {
     font-weight: 500;
     padding: 0;
     line-height: 3.2rem;
+    margin: 15px 0;
   }
   .hero-info h6 {
     text-align: left;
@@ -1237,6 +1239,12 @@ section {
   .menu-wrapper .navbar-custom .mobile {
     display: none;
   }
+  /* === HERO STYLES === */
+  #hero {
+    height: 600px;
+    background: url("../img/hero-bgv2.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
   /* === PORTFOLIO STYLES === */
   .thumb-overlay .caption h2 {
     height: 30px;
@@ -1311,6 +1319,12 @@ section {
   }
   .menu-wrapper .navbar-custom .mobile {
     display: none;
+  }
+  /* === HERO STYLES === */
+  #hero {
+    height: 600px;
+    background: url("../img/hero-bgv2.jpg") 0 0 no-repeat;
+    background-size: cover;
   }
   /* === PORTFOLIO STYLES === */
   .thumb-overlay .caption h2 {
