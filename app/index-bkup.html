@@ -45,17 +45,24 @@
     <![endif]-->
 </head>
 <body>
-	<nav class="nav-menu nav-effect" id="navmenu">
-		<h2>Menu</h2>
-		<ul>
-			<li><a href="#hero">Home<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-			<li><a href="#skills">Skills<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-			<li><a href="#portfolio">Portfolio<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-			<li><a href="#about">About<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-			<li><a href="#contact">Contact<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-		</ul>
-	</nav>
+<div id="st-container" class="st-container">
+	<div class="visible">
+		<nav class="st-menu st-effect-1" id="mobilemenu">
+				<h2>Menu</h2>
+					<ul>
+						<li><a href="#hero">Home<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						<li><a href="#skills">Skills<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						<li><a href="#portfolio">Portfolio<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						<li><a href="#about">About<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						<li><a href="#contact">Contact<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+					</ul>
+			</nav>
+	</div>
 
+<div class="st-content"><!-- this is the wrapper for the content -->
+<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+<!-- content push wrapper -->
+			<div class="st-pusher">
 				
 <div class="social-header">
 	<div class="container">
@@ -97,12 +104,25 @@
 				</div><!-- col -->
 
 				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-3 ">
+					<!--<div class="menu-responsive desktop" style="display:none;">
+						<div class="site-nav pull-right" id="mainNav">	
+							<ul class="nav navbar-nav">
+								<li><a href="/">Home</a></li>
+								<li><a href="#skills">Skills</a></li>
+								<li><a href="#portfolio">Portfolio</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div>-->
 					<div class="menu-responsive pull-right">
-							<button class="nav-icon" id="open">
+						<div id="st-trigger-effects" class="column">
+							<button class="nav-icon" data-effect="st-effect-1" id="open">
 								<span></span>
 								<span></span>
 								<span></span>
 							</button>
+						</div>
 					</div><!-- menu responsive mobile -->
 				</div><!-- col -->
 			</div><!-- row -->
@@ -493,6 +513,10 @@
 		</div>
 	</div><!-- container -->
 </footer><!-- footer -->
+</div>
+</div>
+</div>
+</div><!-- Slider Container -->
 
 <div class="modal fade animated slideInDown" id="hireModal" tabindex="1" role="dialog" aria-labelledby="hireModal" aria-hidden="true">
 	<div class="modal-dialog">
@@ -553,9 +577,8 @@
 
 	<!-- custom scripts -->
 	<script type="text/javascript" src="js/classie.js"></script>
-	<!--<script type="text/javascript" src="js/sidebarEffects.js"></script>-->
+	<script type="text/javascript" src="js/sidebarEffects.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/forhire.js"></script>
 
 </body>

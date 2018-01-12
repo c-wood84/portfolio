@@ -73,7 +73,7 @@
 	}	
 }
 
-#mobilemenu {
+#navmenu {
 	.fa {
 		float: right;
 		font-size: 20px;
@@ -377,6 +377,9 @@ opacity: 0.9;
 
 
 		/* === Nav Menu Styles === */
+		.nav-menu {
+			width: 300px;
+		}
 		.menu-wrapper {
 			.navbar-custom {
 				.logo {
