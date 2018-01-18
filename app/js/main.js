@@ -68,8 +68,15 @@ document.querySelector('.nav-icon').addEventListener('click', function () {
     document.querySelector('.nav-icon').classList.toggle('open-x');
     //Push Out Navigation when hamburger is clicked
     document.querySelector('#navmenu').classList.toggle('menu-open');
-
 });
+
+document.querySelector('#navmenu').addEventListener('click', clickNav);
+
+function clickNav(){
+    document.querySelector('#navmenu').classList.remove('menu-open');
+    document.querySelector('.nav-icon').classList.remove('open-x');
+
+}
 
 
 
