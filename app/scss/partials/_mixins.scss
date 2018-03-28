@@ -29,3 +29,14 @@
     -o-transition: all 0.6s ease;
     transition: all 0.6s ease;
 }
+
+@mixin dev-badge {
+	display: inline-block;
+	border-radius: 50%;
+	border:3px solid $main-portfolio;
+	margin: 10px 10px 10px 0;
+	font-size: 0.9em;
+	text-align: center;
+	line-height: 6em;
+	color:$mainalt-2;
+}

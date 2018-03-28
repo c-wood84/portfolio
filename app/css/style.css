@@ -281,273 +281,10 @@ body {
   transform: scaleX(1);
 }
 
-.progress {
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  background: none;
-  margin: 10px auto 5px;
-  position: relative;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.progress:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 6px solid #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.progress > span {
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-}
-
-.progress .progress-left {
-  left: 0;
-}
-
-.progress .progress-bar {
-  width: 100%;
-  height: 100%;
-  background: none;
-  border-width: 6px;
-  border-style: solid;
-  position: absolute;
-  top: 0;
-}
-
-.progress .progress-left .progress-bar {
-  left: 100%;
-  border-top-right-radius: 80px;
-  border-bottom-right-radius: 80px;
-  border-left: 0;
-  -webkit-transform-origin: center left;
-  -ms-transform-origin: center left;
-  transform-origin: center left;
-}
-
-.progress .progress-right {
-  right: 0;
-}
-
-.progress .progress-right .progress-bar {
-  left: -100%;
-  border-top-left-radius: 80px;
-  border-bottom-left-radius: 80px;
-  border-right: 0;
-  -webkit-transform-origin: center right;
-  -ms-transform-origin: center right;
-  transform-origin: center right;
-  -webkit-animation: dev-1 1.8s linear forwards;
-  animation: dev-1 1.8s linear forwards;
-}
-
-.progress .progress-value {
-  width: 90%;
-  height: 90%;
-  border-radius: 50%;
-  background: none;
-  font-size: 1.6rem;
-  line-height: 94px;
-  color: #525d68;
-  text-align: center;
-  position: absolute;
-  top: 5%;
-  left: 5%;
-}
-
-.progress.html .progress-bar {
-  border-color: #76940a;
-}
-
-.progress.css .progress-bar {
-  border-color: #76940a;
-}
-
-.progress.js .progress-bar {
-  border-color: #76940a;
-}
-
-.progress.php .progress-bar {
-  border-color: #76940a;
-}
-
-.progress.wpress .progress-bar {
-  border-color: #76940a;
-}
-
-.progress.html .progress-left .progress-bar {
-  -webkit-animation: html-2 1.5s linear forwards 1.8s;
-  animation: html-2 1.5s linear forwards 1.8s;
-}
-
-.progress.css .progress-left .progress-bar {
-  -webkit-animation: css-2 1.5s linear forwards 1.8s;
-  animation: css-2 1.5s linear forwards 1.8s;
-}
-
-.progress.js .progress-left .progress-bar {
-  -webkit-animation: js-2 1.5s linear forwards 1.8s;
-  animation: js-2 1.5s linear forwards 1.8s;
-}
-
-.progress.php .progress-left .progress-bar {
-  -webkit-animation: php-2 1.5s linear forwards 1.8s;
-  animation: php-2 1.5s linear forwards 1.8s;
-}
-
-.progress.wpress .progress-left .progress-bar {
-  -webkit-animation: wordpress-2 1.5s linear forwards 1.8s;
-  animation: wordpress-2 1.5s linear forwards 1.8s;
-}
-
-@-webkit-keyframes dev-1 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-}
-
-@keyframes dev-1 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-}
-
-@-webkit-keyframes html-2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(138deg);
-    transform: rotate(138deg);
-  }
-}
-
-@keyframes html-2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(138deg);
-    transform: rotate(138deg);
-  }
-}
-
-@-webkit-keyframes css-2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(148deg);
-    transform: rotate(148deg);
-  }
-}
-
-@keyframes css-2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(148deg);
-    transform: rotate(148deg);
-  }
-}
-
-@-webkit-keyframes js-2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(78deg);
-    transform: rotate(78deg);
-  }
-}
-
-@keyframes js-2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(78deg);
-    transform: rotate(78deg);
-  }
-}
-
-@-webkit-keyframes php-2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(110deg);
-    transform: rotate(110deg);
-  }
-}
-
-@keyframes php-2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(110deg);
-    transform: rotate(110deg);
-  }
-}
-
-@-webkit-keyframes wordpress-2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(130deg);
-    transform: rotate(130deg);
-  }
-}
-
-@keyframes wordpress-2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(130deg);
-    transform: rotate(130deg);
-  }
-}
-
-@media only screen and (max-width: 990px) {
-  .progress {
-    margin-bottom: 20px;
-  }
+.fa-cogs, .fa-wrench, .fa-lightbulb-o {
+  color: #76940a;
+  padding: 0 7px;
+  font-size: 1.3em;
 }
 
 .nav-menu {
@@ -834,15 +571,27 @@ body {
     line-height: 2rem;
   }
   /* === SKILLS STYLES === */
-  .pp-wrap {
-    margin: 15px auto;
+  #skills h3 {
     text-align: center;
   }
-  .pp-wrap h5 {
+  #skills .dev-item {
+    display: inline-block;
+    border-radius: 50%;
+    border: 3px solid #37455e;
+    margin: 10px 10px 10px 0;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 6em;
+    color: #22314c;
+    width: 90px;
+    height: 90px;
+  }
+  #skills .list {
+    list-style: none;
     margin: 0;
-    padding: 0;
-    font-size: 1.2rem;
-    font-weight: 500;
+  }
+  #skills .skill-list {
+    padding: 3px 0 3px;
   }
   /* === PORTFOLIO STYLES === */
   #portfolio {
@@ -1019,6 +768,10 @@ body {
   .hero-info {
     top: 0px;
   }
+  /* === SKILLS STYLES === */
+  .dev-list {
+    padding: unset;
+  }
   /* === LAYOUT STYLES === */
   section {
     padding: 35px 0 75px;
@@ -1078,6 +831,18 @@ body {
   .hero-info .btn-hero {
     width: 25%;
     font-size: 1.95rem;
+  }
+  #skills h3 {
+    text-align: justify;
+  }
+  #skills .dev-list {
+    padding: 0;
+  }
+  #skills .list {
+    padding: 0 0 7px;
+  }
+  #skills .skill-list {
+    padding: 3px 0 3px 7px;
   }
   #contact #working-on {
     margin: 0;
